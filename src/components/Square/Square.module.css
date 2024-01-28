@@ -1,5 +1,12 @@
 .square {
   background-color: #ff8c00;
-  height: 7rem;
-  width: 7rem;
+  height: 10rem;
+  width: 10rem;
+  color: #0000ff;
+  font-weight: 800;
+  font-size: 3.5em;
+}
+
+.square:hover {
+  background-color: #ffa500;
 }

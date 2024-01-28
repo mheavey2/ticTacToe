@@ -1,7 +1,16 @@
-.square {
-  background-color: #ff8c00;
-  height: 7rem;
-  width: 7rem;
+.gameBoard {
+  display: block;
+  justify-content: center;
 }
-/* .boardRow {
-} */
+
+.boardRow {
+  display: flex;
+}
+
+.status {
+  font-weight: 900;
+  font-size: 4em;
+  font-style: oblique;
+  color: #23b5d3;
+  padding: 2rem;
+}
