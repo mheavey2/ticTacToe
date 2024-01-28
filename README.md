@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a simple two player Tic-Tac-Toe (X's and O's) game created using CSS,HTML and React.
+This is a simple two player Tic-Tac-Toe (X's and O's) game created using CSS,HTML, Javascript and React.
 
 I built this project in order to practice and familiarise myself with the basics of React.
 
