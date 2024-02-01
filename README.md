@@ -21,3 +21,11 @@ To play the game the first player, 'X', clicks on any of the nine squares in the
 Above the gameboard, the player who is up next is shown. When the game is over, the winner will be declared above the gameboard.
 
 ![Winner is declared](src/images/ticTacToeWinner.png)
+
+## Future Improvements
+
+Future improvements to the game include:
+
+- displaying the current move number as a status instead of as a button,
+- highlight the 3 winning squares
+- when the game is drawn, display a 'drawn' status message
