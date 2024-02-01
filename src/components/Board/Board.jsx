@@ -1,12 +1,12 @@
 //import square styles
 import styles from "./Board.module.css";
-import Square from "../Square/square";
+import Square from "../Square/Square";
 
 //create a ticTacToe grid of 3x3 rows. each row has its own div
-export default function Board(xIsNext, squares, onPlay) {
+export default function Board({ xIsNext, squares, onPlay }) {
   function handleClick(i) {
     //first check if a square is already filled, so you don't override that value or if there are no more moves/game won
-    if (squares[i] || calculateWinner(squares)) {
+    if (calculateWinner(squares) || squares[i]) {
       return;
     }
     //create copy of the squares array
@@ -17,10 +17,7 @@ export default function Board(xIsNext, squares, onPlay) {
     } else {
       nextSquares[i] = "O";
     }
-    //let React know componenet state has changed
-    setSquares(nextSquares);
-    //update state of xIsNext
-    setXIsNext(!xIsNext);
+    onPlay(nextSquares);
   }
   //let players know game is over
   const winner = calculateWinner(squares);

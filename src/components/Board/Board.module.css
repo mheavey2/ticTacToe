@@ -1,6 +1,5 @@
-.gameBoard {
+.boardContainer {
   display: block;
-  justify-content: center;
 }
 
 .boardRow {

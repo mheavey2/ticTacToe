@@ -1,7 +1,31 @@
-/* .game {
-
-} */
+.game {
+  display: flex;
+}
 .gameBoard {
   display: block;
   justify-content: center;
+}
+
+.gameInfo {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.gameInfo p {
+  display: block;
+}
+
+.moveButton {
+  background-color: #00bfff;
+  padding: 1rem;
+  margin: 0.3rem;
+  color: #ffa500;
+  font-weight: 800;
+  width: 11rem;
+  border-radius: 50%;
+}
+.gameInfo li {
+  list-style-type: none;
 }
