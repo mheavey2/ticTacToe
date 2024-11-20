@@ -1,28 +1,35 @@
 .game {
   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
 .gameBoard {
-  display: block;
-  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .gameInfo {
-  display: inline-flex;
-  align-self: center;
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  margin-top: 8rem;
+  margin-top: 4rem;
+  flex-wrap: wrap;
 }
-
 
 .moveButton {
-  background-color: #00bfff;
+  background-color: #3b64f9;
   padding: 1rem;
   margin: 0.3rem;
-  color: #ffa500;
+  color: #f49b71;
   font-weight: 800;
-  width: 11rem;
-  border-radius: 50%;
+  width: 6em;
+  border-radius: 40%;
 }
-.gameInfo li {
-  list-style-type: none;
+
+.moveButton:hover {
+  background-color: #0a3fd0;
+  color: #ef5503;
+  cursor: pointer;
 }

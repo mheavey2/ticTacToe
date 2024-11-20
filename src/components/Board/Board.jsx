@@ -22,15 +22,16 @@ export default function Board({ xIsNext, squares, onPlay }) {
   //let players know game is over
   const winner = calculateWinner(squares);
   let status;
+
   if (winner) {
-    status = "The Winner is: " + winner;
+    status = `The Winner is:  ${winner} !`;
   } else {
     status = "Next Player: " + (xIsNext ? "X" : "O");
   }
 
   return (
     <>
-      <div className={styles.status}>{status}</div>
+      <div className={winner ? styles.winStatus : styles.status}>{status}</div>
 
       <div className={styles.boardRow}>
         {/* pass the value prop from Board down to each square to associate it with an index in the squares array */}

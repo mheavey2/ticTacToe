@@ -25,27 +25,12 @@ export default function Game() {
 
   //function to jump to an alternate move
   function jumpTo(nextMove) {
-    setCurrentMove(nextMove);
-    //set xIsNext to true if the new currentMOve is an even number
-    setXIsNext(nextMove % 2 === 0);
-  }
-
-  //transform the moves history array to an array of buttons so you can "jump" to previous moves or return to start if there are no moves
-  const moves = history.map((squares, move) => {
-    let description;
-    if (move > 0) {
-      description = "Go to move # " + move;
-    } else {
-      description = "Return to Start";
+    if (nextMove >= 0) {
+      setCurrentMove(nextMove);
+      //set xIsNext to true if the new currentMOve is an even number
+      setXIsNext(nextMove % 2 === 0);
     }
-    return (
-      <li key={move}>
-        <button className={styles.moveButton} onClick={() => jumpTo(move)}>
-          {description}
-        </button>
-      </li>
-    );
-  });
+  }
 
   return (
     <div className={styles.game}>
@@ -53,7 +38,18 @@ export default function Game() {
         <Board xIsNext={xIsNext} squares={currentSquares} onPlay={handlePlay} />
       </div>
       <div className={styles.gameInfo}>
-        <ul>{moves}</ul>
+        <button className={styles.moveButton} onClick={() => jumpTo(0)}>
+          Return to Start
+        </button>
+        {/* if currentMove is greater than 0 display button else display nothing */}
+        {currentMove > 0 ? (
+          <button
+            className={styles.moveButton}
+            onClick={() => jumpTo(currentMove - 1)}
+          >
+            Go to previous Move
+          </button>
+        ) : null}
       </div>
     </div>
   );

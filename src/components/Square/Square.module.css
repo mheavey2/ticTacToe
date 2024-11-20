@@ -1,10 +1,17 @@
 .square {
-  background-color: #ff8c00;
-  height: 10rem;
-  width: 10rem;
-  color: #0000ff;
+  background-color: #f1cfad;
+  height: 4em;
+  width: 4em;
+  color: #2472f0;
   font-weight: 800;
   font-size: 3.5em;
+}
+
+@media screen and (max-width: 500px) {
+  .square {
+    height: 1em;
+    width: 1em;
+  }
 }
 
 .square:hover {

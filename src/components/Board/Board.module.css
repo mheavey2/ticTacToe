@@ -1,13 +1,21 @@
-
-
 .boardRow {
   display: flex;
+  flex-direction: row;
 }
 
 .status {
   font-weight: 900;
-  font-size: 4em;
+  font-size: 2.5em;
   font-style: oblique;
-  color: #23b5d3;
+  color: #ef5503;
+  padding: 1em 2em;
+}
+
+.winStatus {
+  color: blueviolet;
+  font-weight: 900;
+  font-size: 3em;
+  font-style: oblique;
+
   padding: 2rem;
 }

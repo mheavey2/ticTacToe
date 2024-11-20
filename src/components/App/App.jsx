@@ -9,7 +9,7 @@ function App() {
     <>
       <div className={styles.mainContainer}>
         <img src={mainLogo} className={styles.icon} alt="Tic Tac Toe Icon" />
-        <h1>Tic-Tac-Toe</h1>
+        <h1>Tic Tac Toe</h1>
         <Game />
       </div>
     </>
