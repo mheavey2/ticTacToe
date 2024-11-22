@@ -8,7 +8,7 @@
   font-size: 2.5em;
   font-style: oblique;
   color: #ef5503;
-  padding: 1em 2em;
+  padding: 0.5em 2em;
 }
 
 .winStatus {
@@ -16,6 +16,8 @@
   font-weight: 900;
   font-size: 3em;
   font-style: oblique;
+  background-color: #34ef40;
 
-  padding: 2rem;
+  padding: 0.2em;
+  margin-bottom: 0.5em;
 }

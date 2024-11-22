@@ -14,14 +14,14 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 2em;
   flex-wrap: wrap;
 }
 
 .moveButton {
   background-color: #3b64f9;
-  padding: 1rem;
-  margin: 0.3rem;
+  padding: 1em;
+  margin: 0.3em;
   color: #f49b71;
   font-weight: 800;
   width: 6em;
